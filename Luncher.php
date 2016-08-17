@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '246902967:AAE7NDTTHkLqb9BszGY9GtJKVWXO0Hw_hbc');
+define('BOT_TOKEN', '254763914:AAFHrPey1qGODx3iuv6DgrMn7jhcfDdOGk8');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -190,7 +190,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 69367395) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 71951412) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
