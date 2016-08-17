@@ -304,8 +304,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         file_put_contents($id.'/pmembers.txt',"");
         file_put_contents($id.'/booleans.txt',"false");
         $phptext = file_get_contents('phptext.txt');
-        $phptext = str_replace("**TOKEN**",$matches[0],$phptext);
-        $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
+        $phptext = str_replace("**TOKEN**"254763914:AAFHrPey1qGODx3iuv6DgrMn7jhcfDdOGk8,$matches[0],$phptext);
+        $phptext = str_replace("**ADMIN**"71951412,$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pmresanrobot-pmresanrobot.rhcloud.com//'.$id.'/pvresan.php');
